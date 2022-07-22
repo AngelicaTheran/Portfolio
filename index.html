@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
   <!-- Style Switcher -->
-  <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1"/>
+  <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled=""/>
   <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled/>
   <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled/>
-  <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled/>
+  <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" />
   <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled/>
   <link rel="stylesheet" href="css/style-switcher.css">
 </head>
@@ -41,7 +41,7 @@
     <!-- Main Contente Start-->
     <div class="main-content">
       <!-- Home Section Start-->
-      <section class="home section" id="home">
+      <section class="home active section" id="home">
         <div class="container">
           <div class="row">
             <div class="home-info padd-15">
@@ -53,7 +53,7 @@
                 praesentium commodi tempore? Voluptatem consectetur dignissimos
                 laudantium placeat fugit temporibus, similique aperiam!
                 Expedita, porro corrupti?...</p>
-              <a href="#contact" class="btn hireme">Hire Me</a>
+              <a href="#" class="btn">Download CV</a>
             </div>
             <div class="home-img padd-15">
               <img src="/images/usagi.jpg" alt="" />
@@ -63,7 +63,7 @@
       </section>
       <!-- Home Section End-->
       <!-- About Section Start-->
-      <div class="section about" id="about">
+      <section class="section about" id="about">
         <div class="container">
           <div class="row">
             <div class="section-title padd-15">
@@ -104,8 +104,7 @@
                   </div>
                   <div class="row">
                     <div class="buttons padd-15">
-                      <a href="#" class="btn">Download CV</a>
-                      <a href="#contact" class="btn hire'me">Hire Me</a>
+                      <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
                     </div>
                   </div>
                 </div>
@@ -227,7 +226,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- About Section End-->
       <!-- Services Section Start-->
       <section class="service section" id="services">
@@ -311,8 +310,9 @@
                 </p>
               </div>
             </div>
+            <!-- Services item End-->
           </div>
-          <!-- Services item End-->
+          
         </div>
       </section>
       <!-- Services Section End-->
